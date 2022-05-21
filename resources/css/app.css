@@ -1,3 +1,25 @@
-
+body .header {
+  height: 40px;
+  background-color: rgb(130, 169, 117);
+  position: fixed;
+  width: 100%;
+}
+body .header .language {
+  margin-top: 7px;
+  height: 16px;
+}
+body .header .title {
+  font-size: 20px;
+}
+body .section {
+  height: auto;
+}
+body .section1 {
+  background-color: rgb(168, 73, 73);
+}
+body .section-image {
+  width: 100%;
+  padding: 0;
+}
 
 /*# sourceMappingURL=app.css.map */

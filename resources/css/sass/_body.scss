@@ -1,3 +1,30 @@
 body {
+  .header {
+    height: 40px;
+    background-color: $header;
+    position: fixed;
+    width: 100%;
 
+    .language {
+      margin-top: 7px;
+      height: 16px;
+    }
+
+    .title {
+      font-size: 20px;
+    }
+  }
+
+  .section {
+    height: auto;
+  }
+
+  .section1 {
+    background-color: $section1;
+  }
+
+  .section-image {
+    width: 100%;
+    padding: 0;
+  }
 }
