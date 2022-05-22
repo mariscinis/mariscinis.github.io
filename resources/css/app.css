@@ -1,25 +1,40 @@
-body .header {
-  height: 40px;
-  background-color: rgb(130, 169, 117);
-  position: fixed;
-  width: 100%;
-}
-body .header .language {
-  margin-top: 7px;
-  height: 16px;
-}
-body .header .title {
-  font-size: 20px;
-}
 body .section {
   height: auto;
-}
-body .section1 {
-  background-color: rgb(168, 73, 73);
 }
 body .section-image {
   width: 100%;
   padding: 0;
+}
+body .section1 .section-text-container {
+  background-image: url(../images/ladder1.svg);
+  background-repeat: space;
+  background-color: rgb(168, 73, 73);
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+body .section1 .section-text-container .section-text-background {
+  background-color: white;
+  opacity: 60%;
+  border-radius: 20px;
+  width: 80%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .intro {
+  height: 100vh;
+}
+body .intro .title {
+  font-size: 8vw;
+}
+body .intro .author {
+  font-size: 4vw;
+}
+body .intro .logo {
+  width: 50%;
+}
+body .intro .language {
+  width: 20vw;
 }
 
 /*# sourceMappingURL=app.css.map */
