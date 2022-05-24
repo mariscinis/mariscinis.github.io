@@ -5,21 +5,45 @@ body .section-image {
   width: 100%;
   padding: 0;
 }
-body .section1 .section-text-container {
-  background-image: url(../images/ladder1.svg);
+body .section .section-text {
+  position: relative;
+}
+body .section .section-background {
   background-repeat: space;
   background-color: rgb(168, 73, 73);
-  padding-top: 10%;
-  padding-bottom: 10%;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  height: 600px;
 }
-body .section1 .section-text-container .section-text-background {
+body .section .section-text-container {
   background-color: white;
-  opacity: 60%;
+  opacity: 75%;
   border-radius: 20px;
   width: 80%;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  height: 500px;
+  bottom: 50px;
+  left: 10%;
+  border: 1px solid black;
+  overflow: scroll;
+}
+body .section1 .section-background {
+  background-image: url(../images/ladder1.svg);
+}
+body .section2 .section-background {
+  background-image: url(../images/ladder1_nostart.svg);
+}
+body .section3 .section-background,
+body .section4 .section-background {
+  background-image: url(../images/ladder2.svg);
+}
+body .section5 .section-background,
+body .section6 .section-background {
+  background-image: url(../images/ladder3.svg);
+}
+body .section7 .section-background {
+  background-image: url(../images/ladder4.svg);
 }
 body .intro {
   height: 100vh;

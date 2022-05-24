@@ -8,23 +8,63 @@ body {
     padding: 0;
   }
 
-  .section1 {
-    .section-text-container {
-      background-image: url(../images/ladder1.svg);
+  .section {
+    .section-text {
+      position: relative;
+    }
+
+    .section-background {
       background-repeat: space;
       background-color: $section1;
-      padding-top: 10%;
-      padding-bottom: 10%;
+      filter: blur(3px);
+      -webkit-filter: blur(3px);
+      height: 600px;
+    }
 
-      .section-text-background {
-        background-color: white;
-        opacity: 60%;
-        border-radius: 20px;
-        width: 80%;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .section-text-container {
+      background-color: white;
+      opacity: 75%;
+      border-radius: 20px;
+      width: 80%;
+      padding: 10px;
+      position: absolute;
+      height: 500px;
+      bottom: 50px;
+      left: 10%;
+      border: 1px solid black;
+      overflow: scroll;
+    }
+  }
+
+  .section1 {
+    .section-background {
+      background-image: url(../images/ladder1.svg);
+    }
+  }
+
+  .section2 {
+    .section-background {
+      background-image: url(../images/ladder1_nostart.svg);
+    }
+  }
+
+  .section3,
+  .section4 {
+    .section-background {
+      background-image: url(../images/ladder2.svg);
+    }
+  }
+
+  .section5,
+  .section6 {
+    .section-background {
+      background-image: url(../images/ladder3.svg);
+    }
+  }
+
+  .section7 {
+    .section-background {
+      background-image: url(../images/ladder4.svg);
     }
   }
 
