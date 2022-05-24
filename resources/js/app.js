@@ -1,5 +1,5 @@
-window.scrollTo(0, document.body.scrollHeight);
 $('[lang="en"]').hide();
+window.scrollTo(0, document.body.scrollHeight);
 
 $("#lv").click(function() {
     $('[lang="en"]').hide();
