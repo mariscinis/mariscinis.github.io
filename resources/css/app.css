@@ -8,14 +8,12 @@ body .section-image {
 body .section .section-text {
   position: relative;
 }
-body .section .section-background {
+body .section .section-text .section-background {
   background-repeat: space;
   background-color: rgb(168, 73, 73);
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
   height: 600px;
 }
-body .section .section-text-container {
+body .section .section-text .section-text-container {
   background-color: white;
   opacity: 75%;
   border-radius: 20px;
@@ -27,6 +25,34 @@ body .section .section-text-container {
   left: 10%;
   border: 1px solid black;
   overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+body .section .section-text .section-text-container::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+@media (min-width: 1200px) {
+  body .section .section-image {
+    width: 50%;
+    height: 30vw;
+  }
+  body .section .section-text {
+    width: 50%;
+    height: 30vw;
+    float: right;
+  }
+  body .section .section-text .section-background {
+    height: 100%;
+  }
+  body .section .section-text .section-text-container {
+    height: 70%;
+    bottom: 15%;
+  }
 }
 body .section1 .section-background {
   background-image: url(../images/ladder1.svg);
@@ -47,6 +73,7 @@ body .section7 .section-background {
 }
 body .intro {
   height: 100vh;
+  min-height: 120vw;
 }
 body .intro .title {
   font-size: 8vw;
@@ -59,6 +86,44 @@ body .intro .logo {
 }
 body .intro .language {
   width: 20vw;
+}
+@media (min-width: 800px) {
+  body .intro {
+    min-height: 60vw;
+  }
+  body .intro .title {
+    font-size: 4vw;
+    margin-top: 100px;
+  }
+  body .intro .author {
+    font-size: 3vw;
+    margin-top: 10px;
+  }
+  body .intro .logo {
+    width: 35%;
+  }
+  body .intro .language {
+    width: 15vw;
+  }
+}
+@media (min-width: 1200px) {
+  body .intro {
+    min-height: 40vw;
+  }
+  body .intro .title {
+    font-size: 3vw;
+    margin-top: 100px;
+  }
+  body .intro .author {
+    font-size: 2vw;
+    margin-top: 10px;
+  }
+  body .intro .logo {
+    width: 20%;
+  }
+  body .intro .language {
+    width: 10vw;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
