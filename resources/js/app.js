@@ -1,7 +1,7 @@
 $('[lang="en"]').hide();
 
-$(window).ready(function() {
-    $("html, body").animate({ scrollTop: $(document).height() }, 50);
+$(window).on('load', function () {
+    $("html, body").animate({ scrollTop: $(document).height() }, 30);
 });
 
 $("#lv").click(function() {
