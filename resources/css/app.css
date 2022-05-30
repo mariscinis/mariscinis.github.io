@@ -5,13 +5,27 @@ body .section-image {
   width: 100%;
   padding: 0;
 }
+body .arrow-container {
+  width: 10vw;
+  height: 10vw;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  background-color: lightgray;
+  opacity: 80%;
+  position: absolute;
+  padding: 5px;
+}
+body .arrow-container .arrow {
+  height: 100%;
+  width: 100%;
+}
 body .section .section-text {
   position: relative;
 }
 body .section .section-text .section-background {
   background-repeat: space;
-  background-color: rgb(168, 73, 73);
-  height: 600px;
+  height: 400px;
 }
 body .section .section-text .section-text-container {
   background-color: white;
@@ -20,7 +34,7 @@ body .section .section-text .section-text-container {
   width: 80%;
   padding: 10px;
   position: absolute;
-  height: 500px;
+  height: 300px;
   bottom: 50px;
   left: 10%;
   border: 1px solid black;
@@ -32,9 +46,26 @@ body .section .section-text .section-text-container {
   scrollbar-width: none;
   /* Firefox */
 }
+body .section .section-text .section-text-container .section-heading {
+  font-size: 5.5vw;
+  font-weight: bolder;
+}
+body .section .section-text .section-text-container .section-paragraph {
+  font-size: 4.5vw;
+  font-weight: bold;
+  line-height: 1.5;
+}
 body .section .section-text .section-text-container::-webkit-scrollbar {
   display: none;
   /* Safari and Chrome */
+}
+@media (min-width: 800px) {
+  body .section .section-text .section-text-container .section-heading {
+    font-size: 3.5vw;
+  }
+  body .section .section-text .section-text-container .section-paragraph {
+    font-size: 2.5vw;
+  }
 }
 @media (min-width: 1200px) {
   body .section .section-image {
@@ -46,6 +77,9 @@ body .section .section-text .section-text-container::-webkit-scrollbar {
     height: 30vw;
     float: right;
   }
+  body .section .section-text .arrow-container {
+    display: none;
+  }
   body .section .section-text .section-background {
     height: 100%;
   }
@@ -53,27 +87,45 @@ body .section .section-text .section-text-container::-webkit-scrollbar {
     height: 70%;
     bottom: 15%;
   }
+  body .section .section-text .section-text-container .section-heading {
+    font-size: 2.5vw;
+  }
+  body .section .section-text .section-text-container .section-paragraph {
+    font-size: 1.5vw;
+  }
 }
 body .section1 .section-background {
   background-image: url(../images/ladder1.svg);
+  background-color: rgb(234, 166, 148);
 }
 body .section2 .section-background {
   background-image: url(../images/ladder1_nostart.svg);
+  background-color: rgb(178, 99, 73);
 }
-body .section3 .section-background,
+body .section3 .section-background {
+  background-image: url(../images/ladder2.svg);
+  background-color: rgb(252, 234, 217);
+}
 body .section4 .section-background {
   background-image: url(../images/ladder2.svg);
+  background-color: rgb(232, 176, 81);
 }
-body .section5 .section-background,
+body .section5 .section-background {
+  background-image: url(../images/ladder3.svg);
+  background-color: rgb(172, 191, 168);
+}
 body .section6 .section-background {
   background-image: url(../images/ladder3.svg);
+  background-color: rgb(206, 173, 78);
 }
 body .section7 .section-background {
   background-image: url(../images/ladder4.svg);
+  background-color: rgb(204, 185, 149);
 }
 body .intro {
   height: 100vh;
   min-height: 120vw;
+  position: relative;
 }
 body .intro .title {
   font-size: 8vw;
