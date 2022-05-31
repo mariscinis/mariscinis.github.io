@@ -1,17 +1,29 @@
 $('[lang="en"]').hide();
 
-let imageHeight = $(".section-image").height();
-let difference = $(window).height() - imageHeight;
+let imageHeight;
+let difference;
 
 $(window).on('load', function () {
-    if (difference >= 400) {
+    resize();
+
+    $("html, body").animate({ scrollTop: $(document).height() }, 200, function() {
+        $(".intro>.arrow-container").fadeOut(150).fadeIn(150).fadeOut(150).fadeIn(150);
+    });
+});
+
+$(window).on('resize', function() {
+    resize();
+})
+
+function resize() {
+    imageHeight = $(".section-image").height();
+    difference = $(window).height() - imageHeight;
+
+    if (difference >= 400 && $(window).width() < 1200) {
         $(".section-background").height(difference);
         $(".section-text-container").height(difference - 100);
     }
-
-    $("html, body").animate({ scrollTop: $(document).height() }, 30);
-    $(".intro>.arrow-container").fadeOut(150).fadeIn(150).fadeOut(150).fadeIn(150);
-});
+}
 
 $(".arrow-container").on('click', function(event) {
     $([document.documentElement, document.body]).animate({
