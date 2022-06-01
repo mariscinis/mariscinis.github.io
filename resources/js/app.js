@@ -3,7 +3,7 @@ $('[lang="en"]').hide();
 let imageHeight;
 let difference;
 
-$(window).on('load', function () {
+$(document).ready(function () {
     resize();
 
     $("html, body").animate({ scrollTop: $(document).height() }, 200, function() {

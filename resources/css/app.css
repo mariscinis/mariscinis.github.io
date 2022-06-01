@@ -15,6 +15,7 @@ body .arrow-container {
   opacity: 80%;
   position: absolute;
   padding: 5px;
+  z-index: 99;
 }
 body .arrow-container .arrow {
   height: 100%;
@@ -29,7 +30,6 @@ body .section .section-text .section-background {
 }
 body .section .section-text .section-text-container {
   background-color: white;
-  opacity: 75%;
   border-radius: 20px;
   width: 80%;
   padding: 10px;
